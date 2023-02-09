@@ -13,7 +13,7 @@ class ImageViewController: UITableViewController{
     var file = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     var content: [String] {
         do{
-            //print(try FileManager.default.contentsOfDirectory(atPath: path))
+            
             return try FileManager.default.contentsOfDirectory(atPath: path)
         } catch {
             print(error.localizedDescription)
